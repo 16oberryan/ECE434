@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import curses
 from curses import wrapper
@@ -72,7 +74,7 @@ cols = 0
 
 if (len(sys.argv) >= 2):
 	gridSize = int(sys.argv[1])
-print("Etch A Sketch:\nRun 'python etchasketch.py X' to run with custom size 'X' (default is 8).\nTo Play: Use arrow keys to move and 'space' to clear.\nPress 'q' to quit.")
+print("Etch A Sketch:\nRun './etchasketch.py X' to run with custom size 'X' (default is 8).\nTo Play: Use arrow keys to move and 'space' to clear.\nPress 'q' to quit.")
 time.sleep(7)
 stdscr = curses.initscr()
 wrapper(main)
