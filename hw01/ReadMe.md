@@ -9,3 +9,9 @@
 	-'space' key to clear the screen
 	-'q' key to exit
 	Additionally, adding a number as a command line argument will change the board size from the default of 8
+
+## Prof. Yoder's comments
+
+Everything looks good.  Nice etch-a-sketch.
+
+Grade:  10/10
