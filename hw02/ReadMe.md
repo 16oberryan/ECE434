@@ -1,5 +1,6 @@
-
-
+The Etch A Sketch program now works with buttons, although since I only have four buttons, there is currently no clear functionality.
+I used curses previously, and couldn't get it to work with the buttons, so instead of trying to force it, I rewrote the program in a way that will make it easier to move to the LED grid. However, this did lead to a significant downgrade in quality while it's still using the terminal (it re-prints the grid every update). There is also no longer any keyboard input, only push-buttons.
+Etchasketch is still run with './etchasketch.py X' (where X is the grid size)
 
 Oscilloscope measurements
 	|  min (V)	|  max (V)	| period (ms)	|processor usage|shortest period	|processor at shortest period
