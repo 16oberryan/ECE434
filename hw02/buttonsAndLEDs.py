@@ -2,10 +2,10 @@
 import Adafruit_BBIO.GPIO as GPIO
 import time
 
-but0 = "P9_22"
-but1 = "P9_21"
-but2 = "P9_18"
-but3 = "P9_17"
+but0 = "P9_14"
+but1 = "P9_13"
+but2 = "P9_12"
+but3 = "P9_11"
 LED0 = "P9_31"
 LED1 = "P9_29"
 LED2 = "P9_30"

@@ -4,10 +4,10 @@ import sys
 import time
 import Adafruit_BBIO.GPIO as GPIO
 
-but0 = "P9_22"
-but1 = "P9_21"
-but2 = "P9_18"
-but3 = "P9_17"
+but0 = "P9_14"
+but1 = "P9_13"
+but2 = "P9_12"
+but3 = "P9_11"
 GPIO.setup(but0, GPIO.IN)
 GPIO.setup(but1, GPIO.IN)
 GPIO.setup(but2, GPIO.IN)
