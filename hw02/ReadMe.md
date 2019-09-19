@@ -3,7 +3,9 @@ I used curses previously, and couldn't get it to work with the buttons, so inste
 Etchasketch is still run with './etchasketch.py X' (where X is the grid size)
 
 Oscilloscope measurements
+
 	|  min (V)	|  max (V)	| period (ms)	|processor usage|shortest period	|processor at shortest period
+	|  -------  |  -------  | -----------   | --------------|---------------    |----------------------------
 bash	|  -2.5V	|  1.9V		| 240 ms	| 19%		| 36ms			| 100%
 sh	|  -2.5V	|  1.9V		| 226 ms	| 13%		| 26ms			| 100%
 python	|  -2.4V	|  1.8V		| 202 ms	| 2%		| 360 us		| 80%
