@@ -15,3 +15,14 @@ C	|  -2.4V	|  1.8V		| 202 ms	| 2%		| 300 us		| 65%
 Using bash, sh, and python, the period is fairly stable, with occasional long pulses. In C it appears to be perfectly stable
 When launching vi, in bash, sh, and python, the wave had a series of longer pulses (more noticeable with shorter periods). In C, there was no variation (that I noticed)
 After removing some unnecessary lines in the .sh script, the period got closer to the correct period, at ~213ms (using sh) and 13 ms was the shortest possible period
+
+
+## Prof. Yoder's comments
+
+I played with your table's formatting.  See it at: https://github.com/16oberryan/ECE434/tree/master/hw02
+
+Is it really outputting -2.5V?  It shouldn't go below 0.
+Seems like the C code could run faster.
+etch-a-sketch looks good.
+
+Grade:  10/10
