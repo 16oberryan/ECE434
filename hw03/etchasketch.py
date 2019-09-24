@@ -57,7 +57,7 @@ def detectedInput(channel):
 		coordy = (coordy+1)%8
 	refreshScreen()
 
-print("Etch A Sketch:\nTo Play: Use buttons to move and be sad if you want to clear.\nPress ctrl+C to quit.")
+print("Etch A Sketch:\nTo Play: Use knobs to move and the rightmost button to clear.\nPress ctrl+C to quit.")
 
 bus.write_byte_data(matrix, 0x21, 0) #Start oscillator
 bus.write_byte_data(matrix, 0x81, 0) #Disp on, blink off
@@ -72,9 +72,9 @@ GPIO.add_event_detect(but3, GPIO.RISING, callback=detectedInput)
 while True:
 	if (hEncoder.position != hPos):
 		if (hEncoder.position > hPos):
-			coordx = (coordx-1)%8
-		else:
 			coordx = (coordx+1)%8
+		else:
+			coordx = (coordx-1)%8
 		refreshScreen()
 		time.sleep(0.05)
 		hPos = hEncoder.position
