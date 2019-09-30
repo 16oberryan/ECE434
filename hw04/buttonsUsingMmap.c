@@ -43,14 +43,17 @@ int main() {
 	gpio1_setdataout_addr = gpio1_addr + GPIO_SETDATAOUT;
 	gpio1_cleardataout_addr = gpio1_addr + GPIO_CLEARDATAOUT;
 
-	//*gpio1_setdataout_addr = USR3;
-	//*gpio1_setdataout_addr = USR2;
-	//sleep(2);
-	//*gpio1_cleardataout_addr = USR2;
-	//*gpio1_cleardataout_addr = USR3;
-	for (int i=0; i<20; i++) {
-		printf("%d   %d\n", *gpio0_datain_addr, *gpio1_datain_addr);
-		sleep(1);
+	for (int i=0; i<150; i++) {
+		if (((1<<30) & *gpio0_datain_addr) != 0)
+			*gpio1_setdataout_addr = USR2;
+		else
+			*gpio1_cleardataout_addr = USR2;
+
+		if (((1<<28) & *gpio1_datain_addr) != 0)
+			*gpio1_setdataout_addr = USR3;
+		else
+			*gpio1_cleardataout_addr = USR3;
+		usleep(100000);
 	}
 
 	munmap((void *)gpio0_addr, GPIO0_SIZE);
