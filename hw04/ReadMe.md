@@ -12,3 +12,8 @@ Previously, the shortest period I'd seen was 300 us in C, but with mmap, it got 
 
 **2.4" TFT LCD Display
 
+## Prof. Yoder's comments
+
+Good start.  Pictures are missing.
+
+Grade:  8/10
