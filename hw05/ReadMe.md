@@ -12,3 +12,8 @@ Screenshots of both the host output and the bone output are in the hw05 git dire
 **Kernel Modules
 I wasn't sure what files to include for this part, so I included the .ko files (and the .c file for part 3, since that had more changes)
 
+## Prof. Yoder's comments
+
+Looks good. Nice screen shots. 
+
+Grade:  10/10
