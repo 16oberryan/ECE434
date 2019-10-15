@@ -13,3 +13,5 @@
 10) The lower priority interrupt is keeping the external event from starting.
 11) The Real Time patch puts very little code in the interrupt handler, so that any code that would've been in the interrupt handler previously can now be interrupted, which lets high priority tasks run right away.
 
+##PREEMPT_RT plot comments
+When there is no load, the RT kernel barely does better, because the CPU wasn't busy (so the high priority task can execute and finish swiftly). In the heavy load case, however, the RT kernel is much faster and finishes long before the regular kernel does. The RT kernel seems to have a bounded latency, as with or without the load, the latency was roughly the same (although with only 2 datapoints, it's hard to tell). For a load, I used the exercises/linux/modules/Makefile, as suggested in the exercise.
