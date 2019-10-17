@@ -15,3 +15,9 @@
 
 ##PREEMPT_RT plot comments
 When there is no load, the RT kernel barely does better, because the CPU wasn't busy (so the high priority task can execute and finish swiftly). In the heavy load case, however, the RT kernel is much faster and finishes long before the regular kernel does. The RT kernel seems to have a bounded latency, as with or without the load, the latency was roughly the same (although with only 2 datapoints, it's hard to tell). For a load, I used the exercises/linux/modules/Makefile, as suggested in the exercise.
+
+## Prof. Yoder's comments
+
+Looks good. Nice plots
+
+Grade:  10/10
