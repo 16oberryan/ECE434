@@ -12,4 +12,9 @@ The output pins being driven are pins P9_28,  P9_29,  P9_30, and  P9_31. Bits 0,
 pwm-test.c does successfully change the on and off times.
 
 ##5.9 Reading an Input at Regular Intervals
+The code causes the output signal to be delayed by 30ns.
 
+##Table
+| | blink led | PWM generator | controlling PWM | reading input |
+|--------|--------|--------|--------|--------|
+| fastest frequency/time | 12.5 MHz | 142ps std dev | 326.8kHz | 30ns delay |
