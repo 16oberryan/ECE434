@@ -15,6 +15,7 @@ pwm-test.c does successfully change the on and off times.
 The code causes the output signal to be delayed by 30ns.
 
 ##Table
-| value | blink led | PWM generator | controlling PWM | reading input |
-|-------|-----------|---------------|-----------------|---------------|
-| fastest frequency/time | 12.5 MHz | 142ps std dev | 326.8kHz | 30ns delay |
+
+| value                  | blink led | PWM generator | controlling PWM | reading input |
+|------------------------|-----------|---------------|-----------------|---------------|
+| fastest frequency/time | 12.5 MHz  | 142ps std dev | 326.8kHz        | 30ns delay    |
